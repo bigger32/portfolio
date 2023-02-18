@@ -1,0 +1,566 @@
+*
+{
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif; 
+}
+body
+{
+    background : rgb(204, 204, 204);
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: white;
+    margin: 70px;
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+}
+.container .left_Side
+{
+position:relative;
+background : rgb(7, 59, 112);
+padding : 40px;
+}
+
+
+.textodelperfil
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightslategrey;
+    
+}
+.textodelperfil .imgBx
+{
+position: relative;
+width: 200px;
+height: 200px;
+border-radius: 50%;
+overflow: hidden;
+
+
+}
+.textodelperfil .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.textodelperfil h2
+{
+    color: white;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 1000;
+    line-height: 1.4em;
+    
+    
+}
+.textodelperfil h2 span
+{
+    font-size: 0.8em;
+    font-weight: 500;
+}
+.sobremi h2
+{
+    color: white;
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 1000;
+   
+}
+.sobremi  p
+{
+    color: lightslategrey;
+    font-size: 1em;
+    margin-top: 20px;
+    
+    text-transform: lowercase;
+    text-align: center;
+    line-height: 1.4em; 
+    padding-bottom: 20px;  
+    border-bottom: 1px solid lightslategrey;
+    font-weight: 1000;
+}
+
+
+
+.idiomas 
+{
+   padding-top: 10%; 
+   text-align: center;
+   
+   
+}
+
+.idiomas h2 {
+    color: white;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 1000;
+    font-size: 1.2em;
+    
+}
+.idiomas .idioma_izq {
+    color: lightslategrey;
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 15px;
+    font-weight: 1000;
+    
+}
+
+
+.idiomas .idioma_bar  p{
+    position:relative;
+    width: 100%;
+    height: 10px;
+    background: white;
+    
+    
+}
+.idiomas .idioma_bar  p span{
+    position : absolute;
+    top: 0;
+    left: 0;
+    background: lightslategray;
+    width: 100%;
+    height: 100%; 
+}
+
+.idiomas .linea
+
+{
+    padding-top: 20px;
+    border-bottom: 1px solid lightslategrey;
+}
+.contacto
+{
+    
+    
+    padding-top: 10%; 
+    text-align: justify; 
+}
+
+.contacto h2{
+    color: white;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 1000;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.contacto ul
+{
+    position: relative;
+}
+.contacto ul li
+{
+    position:relative;
+    list-style: none;
+    margin: 10px 0;
+    
+    
+}
+.contacto ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: aqua;
+    
+}
+.contacto ul li span{
+    color: lightslategrey;
+    font-weight: 1000;
+}
+.contacto ul li span a{
+    color: lightslategrey;
+    font-weight: 1000;
+    cursor: pointer;
+    
+}
+
+
+.container .right_Side
+{
+position:relative;
+background : white;
+padding : 40px;
+}
+
+.conocimientos
+{
+    padding-top: 0%; 
+    text-align:left;
+}
+
+.conocimientos h2 .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 25px;
+    color: rgb(7, 59, 112);
+    
+}
+
+.conocimientos h2 span
+{
+    color: rgb(7, 59, 112);
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    font-weight: 1000;
+    font-size: 0.8em;
+    
+}
+ .conocimientos .box
+ {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    
+ }
+ .conocimientos .box h4{
+    text-transform: uppercase;
+    color:rgb(7, 59, 112);
+    font-weight: 1000;
+    
+ }
+ .conocimientos .box .porcentaje
+ {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: lightslategray;
+    
+    
+ }
+ .conocimientos .box .porcentaje div
+ {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: lightblue;
+    
+ }
+
+   .educacion
+   {
+    padding-top: 30px;
+    border-top: 1px solid rgb(7, 59, 112);
+   }
+
+   .educacion h2 .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 25px;
+    color:rgb(7, 59, 112);
+}
+
+.educacion h2 span
+{
+    color: rgb(7, 59, 112);
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    font-weight: 1000;
+    font-size: 0.8em;
+}   
+
+.educacion li{
+    margin-bottom: 15px;
+    list-style: none;
+}
+.educacion h5
+{
+    color: rgb(7, 59, 112);
+    font-weight: 1000;
+}
+.educacion h4:nth-child(2)
+{
+    color: rgb(7, 59, 112);
+    font-weight: 1000;
+}
+.educacion h4
+{
+    color: rgb(7, 59, 112);
+    font-weight: 1000;
+}
+.intereses
+{
+    padding-top: 30px;
+    border-top: 1px solid rgb(7, 59, 112);
+    margin-bottom: 15px;
+    list-style: none;
+}
+.intereses h2 .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 25px;
+    color: rgb(7, 59, 112);
+}
+.intereses h2 span
+{
+    color: rgb(7, 59, 112);
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    font-weight: 1000;
+    font-size: 0.8em;
+} 
+.intereses ul
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr)
+} 
+.intereses ul li
+{
+    margin: 10px 0;
+    list-style: none;
+    font-weight: 1000;
+    color: rgb(7, 59, 112);
+}
+.intereses ul li .fa
+{
+    color:rgb(7, 59, 112);
+    font-size: 18px;
+    width: 20px;
+    margin-right: 10px;
+}
+.cv
+ {
+    padding-top: 50px;
+    border-top: 1px solid rgb(7, 59, 112);
+ }
+.cv span{
+    color: rgb(7, 59, 112);
+    text-transform: uppercase;
+    font-weight: 1000;
+    font-size: 1em;
+}
+
+#container_2{
+    background-color: #f8f8f8;
+    position: fixed ;
+    width: 80px;
+    height: 40px;
+    box-shadow: inset 4px 4px 6px #cecece,
+                inset -4px -4px 6px #fff;
+     
+    margin-top: -1120px;
+    right: 50px;
+    border-radius: 25px;
+    cursor: pointer;          
+}
+
+
+#container_2 .toggle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    transform: scale(.7);
+    background-color: linear-gradient(145deg, #d8d8d8, #FFFFFF);
+    border-radius: 25px;
+    box-shadow: 3px 3px 8px #c4c4c4,
+               -3px -3px 8px #fff;
+                
+}
+#container_2.active .toggle{
+    left: 40px;
+}
+body.active {
+    background-color: lightslategrey;
+}
+.active .textodelperfil h2
+{
+    color:black
+}
+.active .sobremi h2
+{
+    color:black;
+}
+.active .sobremi  p
+{
+    color:black;
+}
+.active .idiomas h2
+{
+    color:black;
+}
+.active .idiomas .idioma_izq
+{
+    color:black;
+}
+.active .idiomas .idioma_bar  p span
+{
+    background-color:black;
+}
+.active .idiomas .idioma_bar  p
+{
+    background-color: lightslategrey;
+}
+.active .contacto h2{
+    color: black
+}
+.active .contacto ul li .icon{
+   
+    color: black
+    
+}
+.active .contacto ul li span{
+    color:black}
+ .active .contacto ul li span a{
+    color:black
+ }
+.active .right_Side
+{
+    background-color: rgba(0, 0, 0, 0.685);
+}
+.active .conocimientos h2 span
+{
+ color: black;
+}
+.active .conocimientos .box h4
+{
+    color: black;
+}
+.active .conocimientos .box .porcentaje div
+ {
+   
+    background: black
+    
+ }
+.active .educacion h2 .icon
+{
+    color: black;
+}
+
+.active .educacion h2 span
+{
+    color: black;
+    
+}   
+
+.active .educacion h5
+{
+    color: black;
+    font-weight: 1000;
+}
+.active .educacion h4:nth-child(2)
+{
+    color: black;
+    
+}
+.active .educacion h4
+{
+    color: black;
+    
+}
+.active .intereses
+{
+    border-top: 1px solid black;
+    
+}
+.active .intereses h2 .icon
+{
+
+    color: black;
+}
+.active .intereses h2 span
+{
+    color: black;
+    
+} 
+
+.active .intereses ul li
+{
+  
+    color: black;
+}
+.active .intereses ul li .fa
+{
+    color: black;
+    
+}
+.active .cv
+ {
+    border-top: 1px solid black;
+ }
+.active .cv span{
+    color: black;
+    
+}
+@media (max-width: 1000px)
+{
+.container{
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+}
+.contacto ul{
+    text-align: center;
+}
+.conocimientos h2
+{
+    text-align: center; 
+}
+.educacion h2{
+    text-align: center;
+}
+.educacion ul{
+    text-align: center;
+}
+.intereses h2
+{
+    text-align: center;
+}
+.intereses ul{
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    
+}
+.intereses h2 .icon
+{
+    text-align: center;
+    
+}
+#container_2{
+   position: fixed ;
+    margin-top: -2050px;
+    right: 15px;
+    width: 20px;
+    height: 20px;       
+}
+#container_2 .toggle{
+    
+    width: 20px;
+    height: 20px;   
+}
+}
+
